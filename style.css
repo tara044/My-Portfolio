@@ -17,7 +17,7 @@ html,body{
     height: 80px;
     display: flex;
     padding: 0 50px;
-    background-color: rgb(42, 165, 142);
+    background-color: white;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -55,7 +55,7 @@ button{
     border-radius: 25px; 
 }
 
-button:hover{
+.cta-section button:hover{
     background-color: rgb(28, 27, 27);
     cursor: pointer;
 }
@@ -92,7 +92,7 @@ button:hover{
 
 .text-section{
     flex: 1;
-    background-color: brown;
+    background-color: #6b2f2f;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,3 +116,306 @@ button:hover{
     font-size: 18px;
     margin-bottom: 30px;
 }
+.text-section button{
+    background-color: rgb(125, 42, 42);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px; 
+}
+.text-section button:hover{
+    background-color: chocolate;
+    cursor: pointer;
+}
+/* About Section */
+.about-section{
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  background-color: #6b2f2f;
+  color: white;
+  
+}
+.about-me-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
+    text-align: justify;
+}
+
+.about-me-section h1{
+font-size: 60px;
+margin-bottom: 25px;
+}
+
+.about-me-section p{
+    font-size: 18px;
+    overflow: hidden;
+    line-height: 1.8 ;
+}
+
+.skills-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.skills-section h1{
+    font-size: 48px;
+margin-bottom: 25px;
+}
+
+.my-skills{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    width: 100%;
+    list-style: none;
+
+}
+
+.my-skills li{
+    background-color: brown;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.my-skills li:hover{
+    background-color:green;
+transform: translate(-5px);
+}
+
+/* portfolio section */
+
+.portfolio-section {
+    height: 100vh;
+    background: #953333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 80px;
+}
+
+.portfolio-header {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.portfolio-header h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.portfolio-header p {
+    font-size: 18px;
+    color: #666;
+    color: white;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.portfolio-card {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+}
+
+.portfolio-image {
+    flex: 1;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio-details {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.portfolio-details h2 {
+    margin-bottom: 15px;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tech-stack span {
+    background: brown;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.portfolio-details p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.project-btn {
+    background: brown;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+/* contact section */
+
+.contact-section{
+    height:100vh;
+    display:flex;
+}
+
+.information-section{
+    flex:1;
+    background:brown;
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:80px;
+}
+
+.information-section h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.information-section p{
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    margin-bottom:50px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    font-size:18px;
+}
+
+.contact-item i{
+    font-size:22px;
+}
+
+.social-section h3{
+    margin-bottom:20px;
+}
+
+.social-icons{
+    display:flex;
+    gap:20px;
+}
+
+.social-icons a{
+    color:white;
+    font-size:28px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:wheat;
+    transform:translateY(-3px);
+}
+
+/* Form Section */
+
+.form-section{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background:#f5f5f5;
+    padding:80px;
+}
+
+.form-section h2{
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.form-section form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.form-section input,
+.form-section textarea{
+    width:100%;
+    padding:18px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+.form-section input:focus,
+.form-section textarea:focus{
+    border-color:brown;
+}
+
+.form-section textarea{
+    resize:none;
+}
+
+.form-section button{
+    background:brown;
+    color:white;
+    border:none;
+    padding:18px;
+    border-radius:30px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.form-section button:hover{
+    background:#8b3f3f;
+}
+
+
+
